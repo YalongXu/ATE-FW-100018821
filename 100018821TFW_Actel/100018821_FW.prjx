@@ -1,0 +1,387 @@
+KEY LIBERO "11.9"
+KEY CAPTURE "11.9.0.4"
+KEY DEFAULT_IMPORT_LOC "C:\Users\BhagavaR\Projects\VMS\100018821\Firmware\CouchController\100018821_FW\synthesis"
+KEY DEFAULT_OPEN_LOC "T:\Test Working\KIK2-MSVisualStudio\VMS\100018821\Firmware\100018821-TFW\HDL"
+KEY ProjectID "085f479c-e1d0-4346-a119-baeffeb6907c"
+KEY HDLTechnology "VERILOG"
+KEY VERILOGMODE "VERILOG2001"
+KEY VHDLMODE "VHDL2008"
+KEY UseConstraintFlowTechnology "FALSE"
+KEY VendorTechnology_Family "ProASIC3E"
+KEY VendorTechnology_Die "IT14X14M4"
+KEY VendorTechnology_Package "fg484"
+KEY VendorTechnology_Speed "-2"
+KEY VendorTechnology_DieVoltage "1.5"
+KEY VendorTechnology_PART_RANGE "COM"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE ""
+KEY VendorTechnology_IO_DEFT_STD ""
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY ""
+KEY VendorTechnology_RAD_EXPOSURE ""
+KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
+KEY VendorTechnology_RESTRICTPROBEPINS "1"
+KEY VendorTechnology_RESTRICTSPIPINS "0"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE ""
+KEY VendorTechnology_TARGETDEVICESFORMIGRATION "A3PE3000;"
+KEY VendorTechnology_TEMPR "COM"
+KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
+KEY VendorTechnology_VOLTR "COM"
+KEY ProjectLocation "D:\git\ATE-FW-100018821\100018821TFW_Actel"
+KEY ProjectDescription ""
+KEY Pa4PeripheralNewSeq ""
+KEY SimulationType "VERILOG"
+KEY Vendor "Actel"
+KEY ActiveRoot "top_100018821TFW::work"
+LIST REVISIONS
+VALUE="Impl1",NUM=1
+CURREV=1
+ENDLIST
+LIST FileManager
+VALUE "<project>\constraint\top_100018821TFW.pdc,pdc"
+STATE="utd"
+TIME="1302557968"
+SIZE="37430"
+ENDFILE
+VALUE "<project>\constraint\top_100018821TFW_synth.sdc,sdc"
+STATE="utd"
+TIME="1302194576"
+SIZE="2607"
+ENDFILE
+VALUE "<project>\designer\impl1\top_100018821TFW.adb,adb"
+STATE="utd"
+TIME="1582439217"
+SIZE="12928512"
+ENDFILE
+VALUE "<project>\designer\impl1\top_100018821TFW.pdb,pdb"
+STATE="ood"
+TIME="1302196588"
+SIZE="786432"
+ENDFILE
+VALUE "<project>\designer\impl1\top_100018821TFW_V2.pdb,pdb"
+STATE="utd"
+TIME="1302218542"
+SIZE="792576"
+ENDFILE
+VALUE "<project>\designer\impl1\top_100018821TFW_V3.pdb,pdb"
+STATE="utd"
+TIME="1302558570"
+SIZE="786432"
+ENDFILE
+VALUE "<project>\hdl\ADC_AD7663AS.V,hdl"
+STATE="utd"
+TIME="1302215800"
+SIZE="10151"
+ENDFILE
+VALUE "<project>\hdl\ADC_AD7849BR.v,hdl"
+STATE="utd"
+TIME="1302123446"
+SIZE="4011"
+ENDFILE
+VALUE "<project>\hdl\AddDecode.v,hdl"
+STATE="utd"
+TIME="1239302158"
+SIZE="5347"
+ENDFILE
+VALUE "<project>\hdl\BRIDGE_CONT.v,hdl"
+STATE="utd"
+TIME="1302216050"
+SIZE="7040"
+ENDFILE
+VALUE "<project>\hdl\CAN_SJA1000.v,hdl"
+STATE="utd"
+TIME="1302216114"
+SIZE="4340"
+ENDFILE
+VALUE "<project>\hdl\CLK_DIV.V,hdl"
+STATE="utd"
+TIME="1302134532"
+SIZE="986"
+ENDFILE
+VALUE "<project>\hdl\DAC_AD8803AR.v,hdl"
+STATE="utd"
+TIME="1302216296"
+SIZE="3233"
+ENDFILE
+VALUE "<project>\hdl\DIO_Control.v,hdl"
+STATE="utd"
+TIME="1302216362"
+SIZE="7596"
+ENDFILE
+VALUE "<project>\hdl\dual_port_ram.v,hdl"
+STATE="utd"
+TIME="1302135824"
+SIZE="1714"
+ENDFILE
+VALUE "<project>\hdl\LED_Control.v,hdl"
+STATE="utd"
+TIME="1302217704"
+SIZE="4465"
+ENDFILE
+VALUE "<project>\hdl\MEL.v,hdl"
+STATE="utd"
+TIME="1302217024"
+SIZE="6200"
+ENDFILE
+VALUE "<project>\hdl\Oscillator_Counter.v,hdl"
+STATE="utd"
+TIME="1302218004"
+SIZE="2946"
+ENDFILE
+VALUE "<project>\hdl\pci_emu_target.v,hdl"
+STATE="utd"
+TIME="1233180656"
+SIZE="5901"
+ENDFILE
+VALUE "<project>\hdl\RS485.v,hdl"
+STATE="utd"
+TIME="1302217222"
+SIZE="10498"
+ENDFILE
+VALUE "<project>\hdl\Timer_Counter.v,hdl"
+STATE="utd"
+TIME="1221686504"
+SIZE="1062"
+ENDFILE
+VALUE "<project>\hdl\top_100018821TFW.v,hdl"
+STATE="utd"
+TIME="1302557934"
+SIZE="16027"
+ENDFILE
+VALUE "<project>\synthesis\top_100018821TFW.edn,syn_edn"
+STATE="utd"
+TIME="1302558008"
+SIZE="7174222"
+ENDFILE
+VALUE "<project>\synthesis\top_100018821TFW_sdc.sdc,syn_sdc"
+STATE="utd"
+TIME="1302558008"
+SIZE="1340"
+ENDFILE
+ENDLIST
+LIST UsedFile
+ENDLIST
+LIST NewModulesInfo
+LIST "top_100018821TFW::work"
+FILE "<project>\hdl\top_100018821TFW.v,hdl"
+LIST SynthesisConstraints
+VALUE "<project>\constraint\top_100018821TFW_synth.sdc,sdc"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+LiberoState=Post_Layout
+ideSYNTHESIS(<project>\synthesis\top_100018821TFW.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\top_100018821TFW.adb,adb)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+ENDLIST
+LIST AssociatedStimulus
+ENDLIST
+LIST Other_Association
+ENDLIST
+LIST SimulationOptions
+UseAutomaticDoFile=true
+IncludeWaveDo=false
+Type=max
+RunTime=1000ns
+Resolution=1ps
+VsimOpt=
+EntityName=testbench
+TopInstanceName=<top>_0
+DoFileName=
+DoFileName2=wave.do
+DoFileParams=
+DisplayDUTWave=false
+LogAllSignals=false
+DisablePulseFiltering=false
+DumpVCD=false
+VCDFileName=power.vcd
+VHDL2008=false
+Verilog2001=false
+SystemVerilog=false
+TimeUnit=1
+TimeUnitBase=ns
+Precision=100
+PrecisionBase=ps
+ENDLIST
+LIST ModelSimLibPath
+UseCustomPath=FALSE
+LibraryPath=
+ENDLIST
+LIST GlobalFlowOptions
+GenerateHDLAfterSynthesis=FALSE
+GenerateHDLAfterPhySynthesis=FALSE
+RunDRCAfterSynthesis=FALSE
+AutoCheckConstraints=TRUE
+UpdateModelSimIni=TRUE
+NoIOMode=FALSE
+PeriInitStandalone=FALSE
+EnableViewDraw=FALSE
+UpdateViewDrawIni=TRUE
+GenerateHDLFromSchematic=TRUE
+VmNetlistFlowOn=FALSE
+EnableDesignSeparationOn=FALSE
+EnableSETMitigationOn=FALSE
+DisplayFanoutLimit=10
+AbortFlowOnPDCErrorsOn=TRUE
+AbortFlowOnSDCErrorsOn=TRUE
+InstantiateInSmartDesign=TRUE
+FlashProInputFile=pdb
+SmartGenCompileReport=T
+ENDLIST
+LIST PhySynthesisOptions
+ENDLIST
+LIST Profiles
+NAME="SoftConsole"
+FUNCTION="SoftwareIDE"
+TOOL="SoftConsole"
+LOCATION="eclipse.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Synplify Pro ME"
+FUNCTION="Synthesis"
+TOOL="Synplify Pro ME"
+LOCATION="C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\synplify_pro.exe"
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="ModelSim ME"
+FUNCTION="Simulation"
+TOOL="ModelSim"
+LOCATION="C:\Microsemi\Libero_SoC_v11.9\Modelsim\win32acoem\modelsim.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="FPExpress"
+FUNCTION="Program"
+TOOL="FlashPro"
+LOCATION="C:\Microsemi\Libero_SoC_v11.9\Designer\bin\FPExpress.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Identify Debugger"
+FUNCTION="IdentifyDebugger"
+TOOL="Identify Debugger"
+LOCATION="C:\Microsemi\Libero_SoC_v11.9\Identify\bin\identify_debugger.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+ENDLIST
+LIST ProjectState5.1
+LIST "top_100018821TFW::work"
+LIST Impl1
+LiberoState=Post_Layout
+ideSYNTHESIS(<project>\synthesis\top_100018821TFW.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\top_100018821TFW.adb,adb)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST ExcludePackageForSimulation
+ENDLIST
+LIST ExcludePackageForSynthesis
+ENDLIST
+LIST IncludeModuleForSimulation
+ENDLIST
+LIST CDBOrder
+ENDLIST
+LIST UserCustomizedFileList
+ENDLIST
+LIST OpenedFileList
+ORIENTATION;HORIZONTAL
+StartPage;StartPage;0
+ACTIVEVIEW;StartPage
+ENDLIST
+LIST ModuleSubBlockList
+LIST "ADC_AD7663AS::work","hdl\ADC_AD7663AS.V","FALSE","FALSE"
+SUBBLOCK "CLOCK_DIV::work","hdl\CLK_DIV.V","FALSE","FALSE"
+SUBBLOCK "DP_RAM_2R_1W::work","hdl\dual_port_ram.v","FALSE","FALSE"
+ENDLIST
+LIST "AddDecode::work","hdl\AddDecode.v","FALSE","FALSE"
+ENDLIST
+LIST "BRIDGE_CONT::work","hdl\BRIDGE_CONT.v","FALSE","FALSE"
+SUBBLOCK "TIMER_COUNTER::work","hdl\Timer_Counter.v","FALSE","FALSE"
+ENDLIST
+LIST "CAN_SJA1000::work","hdl\CAN_SJA1000.v","FALSE","FALSE"
+SUBBLOCK "CLOCK_DIV::work","hdl\CLK_DIV.V","FALSE","FALSE"
+ENDLIST
+LIST "CLOCK_DIV::work","hdl\CLK_DIV.V","FALSE","FALSE"
+ENDLIST
+LIST "DAC_AD7849BR::work","hdl\ADC_AD7849BR.v","FALSE","FALSE"
+SUBBLOCK "CLOCK_DIV::work","hdl\CLK_DIV.V","FALSE","FALSE"
+ENDLIST
+LIST "DAC_AD8803AR::work","hdl\DAC_AD8803AR.v","FALSE","FALSE"
+SUBBLOCK "CLOCK_DIV::work","hdl\CLK_DIV.V","FALSE","FALSE"
+ENDLIST
+LIST "DIO_Control::work","hdl\DIO_Control.v","FALSE","FALSE"
+SUBBLOCK "CLOCK_DIV::work","hdl\CLK_DIV.V","FALSE","FALSE"
+ENDLIST
+LIST "DP_RAM_2R_1W::work","hdl\dual_port_ram.v","FALSE","FALSE"
+ENDLIST
+LIST "LED_Control::work","hdl\LED_Control.v","FALSE","FALSE"
+SUBBLOCK "CLOCK_DIV::work","hdl\CLK_DIV.V","FALSE","FALSE"
+ENDLIST
+LIST "MEL::work","hdl\MEL.v","FALSE","FALSE"
+SUBBLOCK "CLOCK_DIV::work","hdl\CLK_DIV.V","FALSE","FALSE"
+SUBBLOCK "TIMER_COUNTER::work","hdl\Timer_Counter.v","FALSE","FALSE"
+ENDLIST
+LIST "OSCILLATOR_COUNTER::work","hdl\Oscillator_Counter.v","FALSE","FALSE"
+SUBBLOCK "CLOCK_DIV::work","hdl\CLK_DIV.V","FALSE","FALSE"
+SUBBLOCK "TIMER_COUNTER::work","hdl\Timer_Counter.v","FALSE","FALSE"
+ENDLIST
+LIST "PCI_EMU_TARGET::work","hdl\pci_emu_target.v","FALSE","FALSE"
+ENDLIST
+LIST "RS485::work","hdl\RS485.v","FALSE","FALSE"
+SUBBLOCK "CLOCK_DIV::work","hdl\CLK_DIV.V","FALSE","FALSE"
+ENDLIST
+LIST "TIMER_COUNTER::work","hdl\Timer_Counter.v","FALSE","FALSE"
+ENDLIST
+LIST "top_100018821TFW::work","hdl\top_100018821TFW.v","FALSE","FALSE"
+SUBBLOCK "ADC_AD7663AS::work","hdl\ADC_AD7663AS.V","FALSE","FALSE"
+SUBBLOCK "AddDecode::work","hdl\AddDecode.v","FALSE","FALSE"
+SUBBLOCK "BRIDGE_CONT::work","hdl\BRIDGE_CONT.v","FALSE","FALSE"
+SUBBLOCK "CAN_SJA1000::work","hdl\CAN_SJA1000.v","FALSE","FALSE"
+SUBBLOCK "DAC_AD7849BR::work","hdl\ADC_AD7849BR.v","FALSE","FALSE"
+SUBBLOCK "DAC_AD8803AR::work","hdl\DAC_AD8803AR.v","FALSE","FALSE"
+SUBBLOCK "DIO_Control::work","hdl\DIO_Control.v","FALSE","FALSE"
+SUBBLOCK "LED_Control::work","hdl\LED_Control.v","FALSE","FALSE"
+SUBBLOCK "MEL::work","hdl\MEL.v","FALSE","FALSE"
+SUBBLOCK "OSCILLATOR_COUNTER::work","hdl\Oscillator_Counter.v","FALSE","FALSE"
+SUBBLOCK "PCI_EMU_TARGET::work","hdl\pci_emu_target.v","FALSE","FALSE"
+SUBBLOCK "RS485::work","hdl\RS485.v","FALSE","FALSE"
+ENDLIST
+ENDLIST
+LIST ActiveTestBenchList
+ENDLIST
+LIST IOTabList
+ENDLIST
+LIST FPTabList
+ENDLIST
+LIST TimingTabList
+ENDLIST
+LIST FDCTabList
+ENDLIST
