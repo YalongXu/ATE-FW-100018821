@@ -28,7 +28,7 @@ KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
 KEY VendorTechnology_VOLTR "COM"
 KEY ProjectLocation "D:\git\ATE-FW-100018821\100018821TFW_Actel"
 KEY ProjectDescription ""
-KEY Pa4PeripheralNewSeq ""
+KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
 KEY Vendor "Actel"
 KEY ActiveRoot "top_100018821TFW::work"
@@ -48,9 +48,14 @@ TIME="1302194576"
 SIZE="2607"
 ENDFILE
 VALUE "<project>\designer\impl1\top_100018821TFW.adb,adb"
-STATE="utd"
+STATE="ood"
 TIME="1582439217"
 SIZE="12928512"
+ENDFILE
+VALUE "<project>\designer\impl1\top_100018821TFW.ide_des,ide_des"
+STATE="utd"
+TIME="1582439976"
+SIZE="1269"
 ENDFILE
 VALUE "<project>\designer\impl1\top_100018821TFW.pdb,pdb"
 STATE="ood"
@@ -69,8 +74,8 @@ SIZE="786432"
 ENDFILE
 VALUE "<project>\hdl\ADC_AD7663AS.V,hdl"
 STATE="utd"
-TIME="1302215800"
-SIZE="10151"
+TIME="1582440285"
+SIZE="10935"
 ENDFILE
 VALUE "<project>\hdl\ADC_AD7849BR.v,hdl"
 STATE="utd"
@@ -148,14 +153,24 @@ TIME="1302557934"
 SIZE="16027"
 ENDFILE
 VALUE "<project>\synthesis\top_100018821TFW.edn,syn_edn"
-STATE="utd"
+STATE="ood"
 TIME="1302558008"
 SIZE="7174222"
 ENDFILE
-VALUE "<project>\synthesis\top_100018821TFW_sdc.sdc,syn_sdc"
+VALUE "<project>\synthesis\top_100018821TFW.so,so"
 STATE="utd"
+TIME="1582439974"
+SIZE="244"
+ENDFILE
+VALUE "<project>\synthesis\top_100018821TFW_sdc.sdc,syn_sdc"
+STATE="ood"
 TIME="1302558008"
 SIZE="1340"
+ENDFILE
+VALUE "<project>\synthesis\top_100018821TFW_syn.prj,prj"
+STATE="utd"
+TIME="1582439222"
+SIZE="2743"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -165,20 +180,6 @@ LIST "top_100018821TFW::work"
 FILE "<project>\hdl\top_100018821TFW.v,hdl"
 LIST SynthesisConstraints
 VALUE "<project>\constraint\top_100018821TFW_synth.sdc,sdc"
-ENDLIST
-LIST ProjectState5.1
-LIST Impl1
-LiberoState=Post_Layout
-ideSYNTHESIS(<project>\synthesis\top_100018821TFW.edn,syn_edn)=StateSuccess
-ideDESIGNER(<project>\designer\impl1\top_100018821TFW.adb,adb)=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
 ENDLIST
 ENDLIST
 ENDLIST
@@ -286,20 +287,6 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
-LIST "top_100018821TFW::work"
-LIST Impl1
-LiberoState=Post_Layout
-ideSYNTHESIS(<project>\synthesis\top_100018821TFW.edn,syn_edn)=StateSuccess
-ideDESIGNER(<project>\designer\impl1\top_100018821TFW.adb,adb)=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -313,8 +300,11 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Synthesize:synplify.log
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+HDL;hdl\ADC_AD7663AS.V;0
+ACTIVEVIEW;hdl\ADC_AD7663AS.V
 ENDLIST
 LIST ModuleSubBlockList
 LIST "ADC_AD7663AS::work","hdl\ADC_AD7663AS.V","FALSE","FALSE"
@@ -361,7 +351,6 @@ ENDLIST
 LIST "TIMER_COUNTER::work","hdl\Timer_Counter.v","FALSE","FALSE"
 ENDLIST
 LIST "top_100018821TFW::work","hdl\top_100018821TFW.v","FALSE","FALSE"
-SUBBLOCK "ADC_AD7663AS::work","hdl\ADC_AD7663AS.V","FALSE","FALSE"
 SUBBLOCK "AddDecode::work","hdl\AddDecode.v","FALSE","FALSE"
 SUBBLOCK "BRIDGE_CONT::work","hdl\BRIDGE_CONT.v","FALSE","FALSE"
 SUBBLOCK "CAN_SJA1000::work","hdl\CAN_SJA1000.v","FALSE","FALSE"
@@ -373,6 +362,7 @@ SUBBLOCK "MEL::work","hdl\MEL.v","FALSE","FALSE"
 SUBBLOCK "OSCILLATOR_COUNTER::work","hdl\Oscillator_Counter.v","FALSE","FALSE"
 SUBBLOCK "PCI_EMU_TARGET::work","hdl\pci_emu_target.v","FALSE","FALSE"
 SUBBLOCK "RS485::work","hdl\RS485.v","FALSE","FALSE"
+SUBBLOCK "ADC_AD7663AS::work","hdl\ADC_AD7663AS.V","FALSE","FALSE"
 ENDLIST
 ENDLIST
 LIST ActiveTestBenchList

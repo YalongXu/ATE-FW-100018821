@@ -17,6 +17,14 @@
 // Revision 0.01 - File Created
 // Additional Comments: test
 //
+// Revision 2.01 - Bug fix
+// Additional Comments: 
+// Bug Description: 
+// ADC convert result is NOT correct or -1; test would probably pass after ambient temperature goes up
+// Resolution:
+// 1. to fix one potential hardware bug: BUSY probably would NOT go from 0 to 1 after AD_CNVST is set as '0' from '1',
+//    then shall try it several times (max repeat_times = 6).
+//
 //////////////////////////////////////////////////////////////////////////////////
 
 /***** Memory Map *****/
@@ -87,7 +95,8 @@ module ADC_AD7663AS(
 	 reg [1:0] clk_aq_high = 2'h0;		// used to look for clk_aq edges
 	 reg ad_sclk_en = 1'b0;					// enable the sclk
 	 reg [6:0] time_out_count = 7'h0;	// time out counter
-
+     reg [4:0]repeat_times;
+    
 	 //signals
 	 wire clk_aq;
 	 wire clk_sd;	
@@ -145,6 +154,7 @@ module ADC_AD7663AS(
             clk_aq_high     <= 2'h0;
             ad_sclk_en      <= 1'b0;
             state           <= `S_START;
+            repeat_times    <=  5'd0;
 	    end
 	      
 	    else if(control[1]) begin				//reset registers
@@ -156,10 +166,13 @@ module ADC_AD7663AS(
 			data_count <= 12'h0;
 			clk_aq_low <= 2'h0;
 			clk_aq_high <= 2'h0;
+            repeat_times    <=  5'd0;
 		end
 		else if(control[0] || status[0]) begin
 			case(state)
 				`S_START: begin
+                    AD_CNVST        <= 1'b1;
+                    time_out_count  <= 0;
 					if((clk_aq_high == 2'h3) && (clk_aq_low == 2'h3))begin	// start action on rising edge of clk_aq
 						state <= `S_CNVST;
 						status[0] <= 1'b1;												// status busy
@@ -180,7 +193,12 @@ module ADC_AD7663AS(
 						time_out_count <= 7'h0;						
 						state <= `S_BUSY;
 					end
-					else if(time_out_count >= 7'h64) begin
+					else if(time_out_count >= 7'h10) begin
+						state <= `S_START;
+						repeat_times <= repeat_times + 5'd1;					
+					end
+					//else if(time_out_count >= 7'h64) begin
+                    else if(repeat_times >= 6) begin
 						status[3] <= 1'b1;
 						AD_CNVST <= 1'b1;													// clear conversion start
 						state <= `S_END;
@@ -302,7 +320,8 @@ module ADC_AD7663AS(
 						status[1] <= 1'b1;
 						ram_wr_clk <= 1'b0;
 						ram_wr_pt <= 12'h000;
-						data_count <= 12'h0;						
+						data_count <= 12'h0;
+                        repeat_times <=  5'd0;						
 					end					
 				end
 			endcase
